@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 import random
 import time
 
-switch = 17
+switch = 17 #Pin anlegen
 
 #GPIO.setmode(GPIO.BOARD) #GPIO Nummerierung nach Pin-Nummerierung auf Board
 
