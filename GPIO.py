@@ -30,7 +30,7 @@ try:
         if GPIO.input(switch) == 1: #Solange die bedingung Wahr ist bzw. der Schalter betätigt ist
             print("I saw the sign!")#Schreibe in die Console "I saw the sign!"
             Plott_Value_of_Sensor(sensorValue)
-            if sensorValue == 1:
+            if sensorValue <= 1:
                 print(f"Wert vom Sensor ist: {sensorValue}")
         else: 
             print(random.choice(randomNothing)) #Wenn keine 1 durch den Schalter erzeugt wird sende random aus der Liste ein Wort
